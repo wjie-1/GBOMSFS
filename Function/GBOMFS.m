@@ -183,8 +183,8 @@ for r =1:n
     % 计算欧氏距离
     distances = sum (sqrt(sum((m1 - m2).^2, 2)) );% 对每一行求和
 
-        Q1 = (1 + exp(-distances/gbnum) )^-1;
-%     Q1 = (exp(-distances/gbnum) );
+
+    Q1 = (exp(-distances/gbnum) );
     Q(r) = Q1 ;
 
 end
